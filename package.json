@@ -1,6 +1,6 @@
 {
   "name": "js-extras",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript extras that either add to or judiciously clobber the Atom defaults.",
   "keywords": [
     "javascript"
@@ -22,7 +22,6 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "readmeFilename": "README.md"
 }
