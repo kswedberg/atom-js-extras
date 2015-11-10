@@ -1,0 +1,25 @@
+{
+  "name": "js-extras",
+  "version": "0.0.1",
+  "description": "JavaScript extras that either add to or judiciously clobber the Atom defaults.",
+  "keywords": [
+    "javascript"
+  ],
+  "activationCommands": {
+    "atom-text-editor": [
+      "js-extras:end-line",
+      "js-extras:end-line-comma",
+      "js-extras:end-new-line",
+      "js-extras:wrap-block"
+    ]
+  },
+  "main": "./lib/js-extras",
+  "repository": "https://github.com/kswedberg/js-extras-atom",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  },
+  "readmeFilename": "README.md"
+}
