@@ -19,7 +19,7 @@
     body: ".test(${1:'string'})$0"
   "split":
     prefix: "split"
-    body: "${1:array}.split(${2:/regex/})$0"
+    body: "${1:string}.split(${2:/regex/})$0"
   "split chain":
     prefix: ".split"
     body: ".split(${1:/regex/})$0"

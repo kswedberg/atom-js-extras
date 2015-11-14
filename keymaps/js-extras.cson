@@ -7,7 +7,7 @@
 
 # For more detailed documentation see
 # https://atom.io/docs/latest/advanced/keymaps
-'atom-text-editor':
+'atom-text-editor[data-grammar~="js"]:not([mini]':
   'ctrl-;': 'js-extras:end-line'
   'ctrl-,': 'js-extras:end-line-comma'
   'ctrl-enter': 'js-extras:end-new-line'
