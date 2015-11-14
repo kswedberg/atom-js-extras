@@ -130,3 +130,9 @@
     body: """
     .concat(${1:array});
     """
+  "join":
+    prefix: "join"
+    body: "${1:array}.join(${2:''})$0"
+  "join chain":
+    prefix: ".join"
+    body: ".join(${1:''})$0"
