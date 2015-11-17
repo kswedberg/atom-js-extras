@@ -43,6 +43,20 @@
     \t${0}
     }
     """
+  'anonymous function':
+    'prefix': 'af',
+    'body': """
+    function($1) {
+      $2
+    }
+    """
+  'named function':
+    'prefix': 'nf',
+    'body': """
+    function ${1:functionName}($2) {
+      $3
+    }
+    """
   'function expression':
     'prefix': 'fe',
     'body': """
@@ -57,3 +71,7 @@
     \t${0}
     })(${2});
     """
+
+  "return":
+    prefix: "r"
+    body: "return $0;"
