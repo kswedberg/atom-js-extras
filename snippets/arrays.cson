@@ -96,6 +96,21 @@
     \t${0}
     \\}});
     """
+  "sort":
+    prefix: "sort"
+    body: """
+    ${1:array}.sort(${2:(${3:a}, ${4:b}) => {
+    \t${0}
+    \\}});
+    """
+  "sort chain":
+    prefix: ".sort"
+    body: """
+    .sort(${1:(${2:a}, ${3:b}) => {
+    \t${0}
+    \\}});
+    """
+
   "every":
     prefix: "every"
     body: """
