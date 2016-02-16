@@ -60,14 +60,14 @@
   'function expression':
     'prefix': 'fe',
     'body': """
-      var ${1:functionName} = function ${1:functionName}($2) {
-        $3
+      ${1:var} ${2:functionName} = function ${2:functionName}($3) {
+        $4
       };
       """
   "immediately-invoked function expression":
     prefix: "iife"
     body: """
-    (function (${1:args}) {
+    (function(${1:args}) {
     \t${0}
     })(${2});
     """
