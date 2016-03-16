@@ -128,12 +128,12 @@
   "indexOf":
     prefix: "indexOf"
     body: """
-    ${1:array}.indexOf(${2:item}${3:, ${4:fromIndex}});
+    ${1:array}.indexOf(${2:item}${3:, ${4:fromIndex}})
     """
   "indexOf chain":
     prefix: ".indexOf"
     body: """
-    .indexOf(${1:item}${2:, ${3:fromIndex}});
+    .indexOf(${1:item}${2:, ${3:fromIndex}})
     """
   "concat":
     prefix: "concat"
