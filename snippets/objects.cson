@@ -25,6 +25,12 @@
       $0
     }${3:,}
     """
+  "Object method - anonymous":
+    prefix: "kf"
+    body: """${1:methodName}: function(${2}) {
+      $0
+    }${3:,}
+    """
   "Object arrow method":
     prefix: "karrow"
     body: """${1:methodName}: (${2}) {

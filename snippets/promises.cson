@@ -9,14 +9,14 @@
   "Promise.then":
     prefix: "then"
     body: """
-    then(${2:value} => {
+    then((${2:value}) => {
     \t${0}
     });
     """
   "Promise.catch":
     prefix: "catch"
     body: """
-    catch(${2:err} => {
+    catch(${2:(err)} => {
     \t${0}
     });
     """

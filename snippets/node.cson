@@ -29,7 +29,7 @@
   "fs.access":
     "prefix": "fsaccess"
     "body": """
-    fs.access(${1:filename}, fs.${2:F_OK/R_OK/W_OK/X_OK}, ${3:function(err) {
+    fs.access(${1:filename}, fs.constants.${2:F_OK/R_OK/W_OK/X_OK}, ${3:function(err) {
       if (err) {
         // File does not exist
         console.log(err);
@@ -43,7 +43,7 @@
   "fs.exists":
     "prefix": "fsexists"
     "body": """
-    fs.access(${1:filename}, fs.${2:F_OK/R_OK/W_OK/X_OK}, ${3:function(err) {
+    fs.access(${1:filename}, fs.constants.${2:F_OK/R_OK/W_OK/X_OK}, ${3:function(err) {
       if (err) {
         // File does not exist
         console.log(err);
