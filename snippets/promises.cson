@@ -6,17 +6,45 @@
     \t${0}
     });
     """
-  "Promise.then":
+  "Promise.ptorotype.then":
     prefix: "then"
     body: """
-    then((${2:value}) => {
+    then(${1:(${2:value}) => {
     \t${0}
-    });
+    \\}})
     """
-  "Promise.catch":
+  "Promise.ptorotype.catch":
     prefix: "catch"
     body: """
-    catch(${2:(err)} => {
+    catch(${1:(${2:value}) => {
     \t${0}
-    });
+    \\}})
     """
+
+  "Promise.all":
+    prefix: "all"
+    body: "Promise.all(${1:iterable})"
+  "Promise.all +":
+    prefix: "Promise.all"
+    body: "Promise.all(${1:iterable})"
+
+  "Promise.race":
+    prefix: "race"
+    body: "Promise.race(${1:iterable})"
+  "Promise.race +":
+    prefix: "Promise.race"
+    body: "Promise.race(${1:iterable})"
+
+  "Promise.resolve":
+    prefix: "resolve"
+    body: "Promise.resolve(${1:value})"
+  "Promise.resolve +":
+    prefix: "Promise.resolve"
+    body: "Promise.resolve(${1:value})"
+
+  "Promise.reject":
+    prefix: "reject"
+    body: "Promise.reject(${1:value})"
+  "Promise.reject +":
+    prefix: "Promise.reject"
+    body: "Promise.reject(${1:value})"
