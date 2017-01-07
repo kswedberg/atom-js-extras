@@ -6,17 +6,17 @@
     \t${0}
     });
     """
-  "Promise.ptorotype.then":
+  "Promise.prototype.then":
     prefix: "then"
     body: """
     then(${1:(${2:value}) => {
     \t${0}
     \\}})
     """
-  "Promise.ptorotype.catch":
+  "Promise.prototype.catch":
     prefix: "catch"
     body: """
-    catch(${1:(${2:value}) => {
+    catch(${1:(${2:err}) => {
     \t${0}
     \\}})
     """
