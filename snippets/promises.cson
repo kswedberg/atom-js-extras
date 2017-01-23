@@ -1,11 +1,19 @@
 ".source.js":
-  "Promise":
-    prefix: "promise",
+  "new Promise":
+    prefix: "Promise",
     body: """
     new Promise((resolve, reject) => {
     \t${0}
     });
     """
+  "new Promise +":
+    prefix: "new Promise",
+    body: """
+    new Promise((resolve, reject) => {
+    \t${0}
+    });
+    """
+
   "Promise.prototype.then":
     prefix: "then"
     body: """
@@ -44,7 +52,7 @@
 
   "Promise.reject":
     prefix: "reject"
-    body: "Promise.reject(${1:value})"
+    body: "Promise.reject(${1:err})"
   "Promise.reject +":
     prefix: "Promise.reject"
-    body: "Promise.reject(${1:value})"
+    body: "Promise.reject(${1:err})"
