@@ -53,6 +53,20 @@
     \t${0}
     \\}}${5:, ${6:initial}});
     """
+  "reduceRight":
+    prefix: "reduceRight"
+    body: """
+    ${1:array}.reduceRight(${2:(${3:previous}, ${4:current}) => {
+    \t${0}
+    \\}}${5:, ${6:initial}});
+    """
+  "reduceRight chain":
+    prefix: ".reduceRight"
+    body: """
+    .reduceRight(${2:(${3:previous}, ${4:current}) => {
+    \t${0}
+    \\}}${5:, ${6:initial}});
+    """
 
   "filter":
     prefix: "filter"
