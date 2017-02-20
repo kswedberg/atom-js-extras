@@ -33,7 +33,7 @@
     """
   "Object arrow method":
     prefix: "karrow"
-    body: """${1:methodName}: (${2}) {
+    body: """${1:methodName}: (${2}) => {
       $0
     }${3:,}
     """
