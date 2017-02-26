@@ -64,6 +64,12 @@
   "setAttribute +":
     "prefix": ".seta"
     "body": ".setAttribute('${2:attr}', ${3:value})"
+  "insertAdjacentHTML":
+    "prefix": "insertA"
+    "body": "${1:element}.insertAdjacentHTML(${2:beforebegin/afterbegin/beforeend/afterend}, ${3:htmlString})"
+  "insertAdjacentHTML +":
+    "prefix": ".insertA"
+    "body": ".insertAdjacentHTML(${2:beforebegin/afterbegin/beforeend/afterend}, ${3:htmlString})"
   "appendChild":
     "prefix": "appendChild"
     "body": "${1:parentElement}.appendChild(${2:elem})"
@@ -76,12 +82,24 @@
   "removeChild +":
     "prefix": ".removeChild"
     "body": ".removeChild(${2:elem})"
+  "createDocumentFragment":
+    "prefix": "createDoc"
+    "body": "${1:document}.createDocumentFragment(${2:elem})"
+  "createDocumentFragment +":
+    "prefix": ".createDoc"
+    "body": ".createDocumentFragment(${2:elem})"
   "createElement":
     "prefix": "createEl"
     "body": "${1:document}.createElement(${2:elem})"
   "createElement +":
     "prefix": ".createEl"
     "body": ".createElement(${2:elem})"
+  "createTextNode":
+    "prefix": "createText"
+    "body": "${1:document}.createTextNode(${2:text})"
+  "createTextNode +":
+    "prefix": ".createText"
+    "body": ".createTextNode(${2:text})"
   "textContent":
     "prefix": "textContent"
     "body": "${1:element}.textContent = '${2:content}';"
