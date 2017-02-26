@@ -6,17 +6,18 @@
     \t$0
     });
     """
-  "JSON.stringify":
-    "prefix": "jsons"
-    "body": """
-    JSON.stringify(${0:obj})
+  "setTimeout":
+    prefix: "timeout"
+    body: """
+    setTimeout(() => {
+    \t$0
+    }, ${1:10});
     """
-  "JSON.parse":
-    "prefix": "jsonp"
-    "body": """
-    JSON.parse(${0:string})
+  "clearTimeout":
+    prefix: "clear"
+    body: """
+    clearTimeout(${0:timer});
     """
-
   "encodeURIComponent":
     "prefix": "encode"
     "body": """
