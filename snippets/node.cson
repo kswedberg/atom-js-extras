@@ -3,7 +3,7 @@
     prefix: "moduleExports"
     body: "module.exports = ${1:name};"
   "require module":
-    prefix: "req"
+    prefix: "require"
     body: '''
     ${1:const} ${2:module} = require('${3:${2:module}}');$0
     '''
