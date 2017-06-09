@@ -85,7 +85,7 @@
   "find":
     prefix: "find"
     body: """
-    ${1:array}(${2:(${3:item}) => {
+    ${1:array}.find(${2:(${3:item}) => {
     \t${0}
     \\}});
     """
@@ -99,7 +99,7 @@
   "findIndex":
     prefix: "findIndex"
     body: """
-    ${1:array}(${2:(${3:item}) => {
+    ${1:array}.findIndex(${2:(${3:item}) => {
     \t${0}
     \\}});
     """
@@ -164,7 +164,7 @@
     .indexOf(${1:item}${2:, ${3:fromIndex}})
     """
   "lastIndexOf":
-    prefix: "indexOf"
+    prefix: "lastIndexOf"
     body: """
     ${1:array}.lastIndexOf(${2:item}${3:, ${4:fromIndex}})
     """
