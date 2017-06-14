@@ -1,0 +1,145 @@
+# .
+".source.js":
+  "mySet.add":
+    prefix: "add"
+    body: """
+    ${1:mySet}.add(${2:value})$0
+    """
+    description: "Appends a new element with the given value to the Set object. Returns the Set object."
+    descriptionMoreURL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/add"
+
+  "mySet.add chain":
+    prefix: ".add"
+    body: """
+    .add(${1:value})$0
+    """
+    description: "Appends a new element with the given value to the Set object. Returns the Set object."
+    descriptionMoreURL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/add"
+
+  "myMapOrSet.clear":
+    prefix: "clear"
+    body: """
+    ${1:mySet}.clear()$0
+    """
+    description: "Removes all key/value pairs from the Map or Set object."
+    descriptionMoreURL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/clear"
+
+  "myMapOrSet.clear chain":
+    prefix: ".clear"
+    body: """
+    .clear()$0
+    """
+    description: "Removes all key/value pairs from the Map or Set object."
+    descriptionMoreURL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/clear"
+
+  "myMapOrSet.delete":
+    prefix: "delete"
+    body: """
+    ${1:mySet}.delete(${2:key})$0
+    """
+    description: "Removes any value associated to the key and returns the value that myMapOrSet.has(key) would have previously returned."
+    descriptionMoreURL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/delete"
+
+  "myMapOrSet.delete chain":
+    prefix: ".delete"
+    body: """
+    .delete(${1:key})$0
+    """
+    description: "Removes any value associated to the key and returns the value that myMapOrSet.has(key) would have previously returned."
+    descriptionMoreURL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/delete"
+
+  "myMapOrSet.entries":
+    prefix: "entries"
+    body: """
+    ${1:mySet}.entries()$0
+    """
+    description: "Returns a new Map or Set object that contains an array of [key, value] for each element in the iterable in insertion order."
+    descriptionMoreURL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/entries"
+
+  "myMapOrSet.entries chain":
+    prefix: ".entries"
+    body: """
+    .entries()$0
+    """
+    description: "Returns a new Map or Set object that contains an array of [key, value] for each element in the iterable in insertion order."
+    descriptionMoreURL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/entries"
+
+  "myMap.get":
+    prefix: "get"
+    body: """
+    ${1:mySet}.get(${2:key})$0
+    """
+    description: "Returns the value associated to the key, or undefined if there is none."
+    descriptionMoreURL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/get"
+
+  "myMap.get chain":
+    prefix: ".get"
+    body: """
+    .get(${1:key})$0
+    """
+    description: "Returns the value associated to the key, or undefined if there is none."
+    descriptionMoreURL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/get"
+
+  "myMapOrSet.has":
+    prefix: "has"
+    body: """
+    ${1:mySet}.has(${2:key})$0
+    """
+    description: "Returns a boolean asserting whether a value has been associated to the key in the iterable or not."
+    descriptionMoreURL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/has"
+
+  "myMapOrSet.has chain":
+    prefix: ".has"
+    body: """
+    .has(${1:key})$0
+    """
+    description: "Returns a boolean asserting whether a value has been associated to the key in the iterable or not."
+    descriptionMoreURL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/has"
+
+  "myMapOrSet.keys":
+    prefix: "keys"
+    body: """
+    ${1:mySet}.keys()$0
+    """
+    description: "Returns a new Map or Set object that contains the keys for each element in the iteratable in insertion order."
+    descriptionMoreURL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/keys"
+
+  "myMapOrSet.keys chain":
+    prefix: ".keys"
+    body: """
+    .keys()$0
+    """
+    description: "Returns a new Map or Set object that contains the keys for each element in the iteratable in insertion order."
+    descriptionMoreURL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/keys"
+
+  "myMap.set":
+    prefix: "set"
+    body: """
+    ${1:mySet}.set(${2:key}, ${3:value})$0
+    """
+    description: "Sets the value for the key in the iteratable. Returns the iteratable."
+    descriptionMoreURL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/set"
+
+  "myMap.set chain":
+    prefix: ".set"
+    body: """
+    .set(${1:key}, ${2:value})$0
+    """
+    description: "Sets the value for the key in the iteratable. Returns the iteratable."
+    descriptionMoreURL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/set"
+
+  "myMapOrSet.values":
+    prefix: "values"
+    body: """
+    ${1:mySet}.values()$0
+    """
+    description: "Returns a new Map or Set object that contains the values for each element in the iterable in insertion order."
+    descriptionMoreURL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/values"
+
+  "myMapOrSet.values chain":
+    prefix: ".values"
+    body: """
+    .values()$0
+    """
+    description: "Returns a new Map or Set object that contains the values for each element in the iterable in insertion order."
+    descriptionMoreURL: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/values"
