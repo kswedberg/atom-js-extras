@@ -12,12 +12,28 @@
   "Object.create +":
     prefix: "Object.create"
     body: "Object.create(${1:object})"
+
+  "Object.entries":
+    prefix: "entries"
+    body: "Object.entries(${1:object})"
+  "Object.entries +":
+    prefix: "Object.entries"
+    body: "Object.keys(${1:object})"
+
   "Object.keys":
     prefix: "keys"
     body: "Object.keys(${1:object})"
   "Object.keys +":
     prefix: "Object.keys"
     body: "Object.keys(${1:object})"
+
+  "Object.values":
+    prefix: "values"
+    body: "Object.values(${1:object})"
+  "Object.values +":
+    prefix: "Object.values"
+    body: "Object.values(${1:object})"
+
 
   "Object method":
     prefix: "km"
@@ -32,7 +48,7 @@
     }${3:,}
     """
   "Object arrow method":
-    prefix: "karrow"
+    prefix: "ka"
     body: """${1:methodName}: (${2}) => {
       $0
     }${3:,}
