@@ -64,6 +64,14 @@
         $4
       };
       """
+
+  'function expression (arrow)':
+    'prefix': 'fea',
+    'body': """
+      ${1:let} ${2:functionName} = ($3) => {
+        $4
+      };
+      """
   "immediately-invoked function expression":
     prefix: "iife"
     body: """
