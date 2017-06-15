@@ -57,6 +57,7 @@
       $3
     }
     """
+
   'function expression':
     'prefix': 'fe',
     'body': """
@@ -72,6 +73,26 @@
         $4
       };
       """
+  'async named function':
+    'prefix': 'asyncn',
+    'body': """
+      async function ${2:functionName}($3) {
+        $4
+      };
+      """
+  'async function expression':
+    'prefix': 'async',
+    'body': """
+      ${1:let} ${2:functionName} = async function($3) {
+        $4
+      };
+      """
+  'await':
+    'prefix': 'await',
+    'body': """
+      await ${1:functionName}(${3:args})$0
+      """
+
   "immediately-invoked function expression":
     prefix: "iife"
     body: """
