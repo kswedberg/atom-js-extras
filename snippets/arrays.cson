@@ -96,33 +96,44 @@
     \\}});
     """
 
+  "includes":
+    prefix: "includes"
+    body: """
+    ${1:array}.includes(${2:item})
+    """
+  "includes chain":
+    prefix: ".includes"
+    body: """
+    .includes(${1:item})
+    """
+
   "indexOf":
     prefix: "indexOf"
     body: """
-    ${1:array}.indexOf(${2:item}${3:, ${4:fromIndex}})
+    ${1:array}.indexOf(${2:item})
     """
   "indexOf chain":
     prefix: ".indexOf"
     body: """
-    .indexOf(${1:item}${2:, ${3:fromIndex}})
+    .indexOf(${1:item})
     """
 
   "join":
     prefix: "join"
-    body: "${1:array}.join(${2:''})$0"
+    body: "${1:array}.join(${2})$0"
   "join chain":
     prefix: ".join"
-    body: ".join(${1:''})$0"
+    body: ".join(${1})$0"
 
   "lastIndexOf":
     prefix: "lastIndexOf"
     body: """
-    ${1:array}.lastIndexOf(${2:item}${3:, ${4:fromIndex}})
+    ${1:array}.lastIndexOf(${2:item})
     """
   "lastIndexOf chain":
     prefix: ".lastIndexOf"
     body: """
-    .lastIndexOf(${1:item}${2:, ${3:fromIndex}})
+    .lastIndexOf(${1:item})
     """
 
   "map":
@@ -198,4 +209,16 @@
     .sort(${1:(${2:a}, ${3:b}) => {
     \t${0}
     \\}});
+    """
+
+  "splice":
+    prefix: "splice"
+    body: """
+    ${1:array}.splice(${2:startIndex}${4:, ${5:deleteCount=0}})
+    """
+
+  "splice chain":
+    prefix: ".splice"
+    body: """
+    .splice(${1:startIndex}${2:, ${3:deleteCount=0}})
     """
