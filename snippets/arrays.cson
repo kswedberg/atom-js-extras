@@ -76,7 +76,7 @@
   "findIndex chain":
     prefix: ".findIndex"
     body: """
-    .find(${1:(${2:item}) => {
+    .findIndex(${1:(${2:item}) => {
     \t${0}
     \\}});
     """
