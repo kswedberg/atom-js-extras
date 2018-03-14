@@ -28,6 +28,13 @@
     \t${0}
     \\}})
     """
+  "Promise.prototype.finally":
+    prefix: "finally"
+    body: """
+    finally(${1:() => {
+    \t${0}
+    \\}})
+    """
 
   "Promise.all":
     prefix: "all"
