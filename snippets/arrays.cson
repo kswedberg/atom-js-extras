@@ -154,14 +154,14 @@
   "reduce":
     prefix: "reduce"
     body: """
-    ${1:array}.reduce(${2:(${3:previous}, ${4:current}) => {
+    ${1:array}.reduce(${2:(${3:prev}, ${4:curr}) => {
     \t${0}
     \\}}${5:, ${6:initial}});
     """
   "reduce chain":
     prefix: ".reduce"
     body: """
-    .reduce(${2:(${3:previous}, ${4:current}) => {
+    .reduce(${2:(${3:prev}, ${4:curr}) => {
     \t${0}
     \\}}${5:, ${6:initial}});
     """
@@ -169,14 +169,14 @@
   "reduceRight":
     prefix: "reduceRight"
     body: """
-    ${1:array}.reduceRight(${2:(${3:previous}, ${4:current}) => {
+    ${1:array}.reduceRight(${2:(${3:prev}, ${4:curr}) => {
     \t${0}
     \\}}${5:, ${6:initial}});
     """
   "reduceRight chain":
     prefix: ".reduceRight"
     body: """
-    .reduceRight(${2:(${3:previous}, ${4:current}) => {
+    .reduceRight(${2:(${3:prev}, ${4:curr}) => {
     \t${0}
     \\}}${5:, ${6:initial}});
     """
