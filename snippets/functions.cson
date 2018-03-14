@@ -29,6 +29,12 @@
     }
     """
 
+  "arrow function quick return":
+    prefix: "qarrow"
+    body: """
+    (${1:_}) => ${2:_}
+    """
+
   "arrow function with body":
     prefix: "arrow"
     body: """
