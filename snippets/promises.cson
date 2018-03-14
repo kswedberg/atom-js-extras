@@ -59,7 +59,7 @@
 
   "Promise.reject":
     prefix: "reject"
-    body: "Promise.reject(${1:err})"
+    body: "Promise.reject(${1:new Error(${2:errorMessage})})"
   "Promise.reject +":
     prefix: "Promise.reject"
-    body: "Promise.reject(${1:err})"
+    body: "Promise.reject(${1:new Error(${2:errorMessage})})"
